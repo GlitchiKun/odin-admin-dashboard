@@ -43,6 +43,8 @@ header {
   border-radius: 25px;
   height: 2rem;
   flex-grow: 1;
+  font-family: Roboto;
+  padding: 0px 15px;
 }
 
 .avatar {
