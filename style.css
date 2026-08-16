@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
   display: grid;
   grid-template: 1fr 6fr / 1fr 4fr;
   height: 100vh;
   margin: 0;
+  font-family: Roboto;
 }
 
 nav {
@@ -13,8 +16,83 @@ nav {
 }
 
 header {
+  display: grid;
+  align-items: center;
+  grid-template: 1fr 1fr / 120px 4fr 2fr;
   background-color: white;
   box-shadow: 0px 5px 10px lightgray;
+  justify-items: center;
+  padding-right: 20px;
+}
+
+.searchbar {
+  grid-column: span 2;
+  justify-self: stretch;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.searchbar > label {
+  justify-self: end;
+  padding-left: 30px;
+}
+.searchbar > input {
+  border: none;
+  background-color: #d9dde8;
+  border-radius: 25px;
+  height: 2rem;
+  flex-grow: 1;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.big.avatar {
+  height: 70px;
+}
+
+.small.avatar {
+  height: 50px;
+}
+
+.user-info {
+  display: grid;
+  grid-template-columns: 2rem 100px 1fr;
+  align-items: center;
+  justify-items: center;
+  justify-self: end;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.user-greeting {
+  justify-self: start;
+  font-weight: bold;
+}
+
+.full-username {
+  font-size: 1.5rem;
+}
+
+.header-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-self: end;
+}
+
+.header-buttons > button {
+  background-color: #2096d5;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 1.3rem;
+  height: 2.5rem;
+  padding: 0 25px;
 }
 
 main {
