@@ -1,4 +1,23 @@
-h1 {
+body {
+  display: grid;
+  grid-template: 1fr 6fr / 1fr 4fr;
+  height: 100vh;
+  margin: 0;
+}
+
+nav {
   background-color: #1992d4;
   color: white;
+  grid-row: span 2;
+  z-index: 1;
+}
+
+header {
+  background-color: white;
+  box-shadow: 0px 5px 10px lightgray;
+}
+
+main {
+  background-color: #e3e8f0;
+  z-index: -1;
 }
