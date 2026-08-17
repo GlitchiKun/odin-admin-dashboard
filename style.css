@@ -12,7 +12,7 @@ nav {
   background-color: #1992d4;
   color: white;
   grid-row: span 2;
-  z-index: 1;
+  z-index: 2;
 }
 
 header {
@@ -98,6 +98,63 @@ header {
 }
 
 main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+  padding: 30px;
   background-color: #e3e8f0;
-  z-index: -1;
+  z-index: 1;
+}
+
+.project,
+.annoncements,
+.trends {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 5px 6px #c7cbd2;
+  padding: 10px 30px;
+}
+
+.projects-container {
+  grid-row: span 2;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  border-left: 10px solid #f0b429;
+}
+
+.annoncements h4 {
+  margin-bottom: 0;
+}
+
+.annoncement:not(:last-child) {
+  border-bottom: 1px solid lightgray;
+}
+
+.trends {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 50px 1fr;
+  gap: 30px;
+  padding: 30px 20px;
+}
+
+.trend {
+  display: contents;
+}
+
+.trend .usertag {
+  font-weight: bold;
+}
+
+.trend .project-title {
+  color: rgb(90, 90, 90);
 }
