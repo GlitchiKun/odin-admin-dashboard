@@ -25,6 +25,12 @@ nav svg {
 }
 
 nav a {
+  padding: 5px 15px;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 10px 20px;
+  align-items: center;
+  font-size: 1.2rem;
   text-decoration: none;
 }
 
@@ -36,15 +42,6 @@ nav a:visited {
   display: grid;
   grid-template-columns: 100px 1fr;
   align-items: center;
-}
-
-.main-nav,
-.miscellaneous-nav {
-  display: grid;
-  grid-template-columns: 40px 1fr;
-  gap: 10px 20px;
-  align-items: center;
-  font-size: 1.2rem;
 }
 
 header {
