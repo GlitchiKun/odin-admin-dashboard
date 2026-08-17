@@ -2,7 +2,7 @@
 
 body {
   display: grid;
-  grid-template: 1fr 6fr / 1fr 4fr;
+  grid-template: 1fr 6fr / 350px 4fr;
   min-height: 100dvh;
   margin: 0;
   font-family: Roboto;
