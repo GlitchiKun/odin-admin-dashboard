@@ -9,10 +9,42 @@ body {
 }
 
 nav {
+  display: grid;
+  grid-template-rows: 200px 1fr 1fr;
   background-color: #1992d4;
   color: white;
   grid-row: span 2;
   z-index: 2;
+  align-items: start;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+nav svg {
+  fill: white;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: currentColor;
+}
+
+.title-nav {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+
+.main-nav,
+.miscellaneous-nav {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 10px 20px;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
 header {
@@ -28,12 +60,13 @@ header {
 .searchbar {
   grid-column: span 2;
   justify-self: stretch;
-  display: flex;
+  display: grid;
+  grid-template-columns: 60px 1fr;
   gap: 10px;
   align-items: center;
 }
 
-.searchbar > label {
+.searchbar > svg {
   justify-self: end;
   padding-left: 30px;
 }
