@@ -96,7 +96,7 @@ header {
 
 .user-info {
   display: grid;
-  grid-template-columns: auto 100px 1fr;
+  grid-template-columns: 30px 100px 1fr;
   align-items: center;
   justify-items: center;
   justify-self: end;
