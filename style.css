@@ -30,7 +30,8 @@ nav a {
   grid-template-columns: 40px 1fr;
   gap: 10px 20px;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -40,8 +41,9 @@ nav a:visited {
 
 .title-nav {
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 60px 1fr;
   align-items: center;
+  gap: 16px;
 }
 
 header {
@@ -160,6 +162,20 @@ main {
 
 .project {
   border-left: 10px solid #f0b429;
+  display: grid;
+  grid-template-rows: 3rem 1fr 30px;
+  padding-bottom: 20px;
+}
+
+.project-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 30px);
+  gap: 20px;
+  justify-self: end;
+}
+
+.project-icons svg {
+  fill: rgb(70, 70, 70);
 }
 
 .announcements h4 {
@@ -187,6 +203,6 @@ main {
   font-weight: bold;
 }
 
-.trend .project-title {
+.details {
   color: rgb(90, 90, 90);
 }
