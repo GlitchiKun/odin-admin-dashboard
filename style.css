@@ -140,7 +140,7 @@ main {
 }
 
 .project,
-.annoncements,
+.announcements,
 .trends {
   background-color: white;
   border-radius: 10px;
@@ -162,11 +162,11 @@ main {
   border-left: 10px solid #f0b429;
 }
 
-.annoncements h4 {
+.announcements h4 {
   margin-bottom: 0;
 }
 
-.annoncement:not(:last-child) {
+.announcement:not(:last-child) {
   border-bottom: 1px solid lightgray;
 }
 
